@@ -1,0 +1,59 @@
+@use 'variables' as *;
+
+//!KEYFRAMES
+@keyframes move-logo {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-115%);
+  }
+}
+
+@keyframes move-coin-left {
+  0%{
+    transform: translateX(-130%) rotate(-120deg);
+  }
+  100%{
+    transform: translateX(0%) rotate(-30deg);
+  }
+}
+
+@keyframes move-coin-right {
+  0%{
+    transform: translateX(130%) rotate(120deg);
+  }
+  100%{
+    transform: translateX(0%) rotate(30deg);
+  }
+}
+
+@keyframes card-jump {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes vanish {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}

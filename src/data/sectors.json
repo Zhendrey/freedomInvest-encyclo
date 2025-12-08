@@ -1,0 +1,154 @@
+[
+    {
+        "name": "Technology",
+        "description": "Technology sector includes companies involved in computing, software, hardware, semiconductors, and IT services.",
+        "stocks": [
+            "AAPL",
+            "MSFT",
+            "GOOGL",
+            "NVDA",
+            "META",
+            "INTC",
+            "IBM",
+            "CSCO",
+            "QCOM",
+            "AMD",
+            "CRM",
+            "ORCL",
+            "SAP",
+            "ADBE",
+            "TSM"
+        ],
+        "performance": {
+            "ytd": 28.5,
+            "oneYear": 35.2,
+            "threeYear": 42.8
+        }
+    },
+    {
+        "name": "Healthcare",
+        "description": "Healthcare sector encompasses pharmaceuticals, medical devices, biotech, and healthcare services companies.",
+        "stocks": [
+            "JNJ",
+            "MRK",
+            "AMGX",
+            "GILD",
+            "REGN",
+            "LLY",
+            "UNH"
+        ],
+        "performance": {
+            "ytd": 15.3,
+            "oneYear": 22.1,
+            "threeYear": 18.9
+        }
+    },
+    {
+        "name": "Financial",
+        "description": "Financial sector includes banks, insurance companies, investment firms, and other financial services.",
+        "stocks": [
+            "BRK.B",
+            "V",
+            "JPM",
+            "AXP",
+            "MA"
+        ],
+        "performance": {
+            "ytd": 22.4,
+            "oneYear": 28.7,
+            "threeYear": 24.5
+        }
+    },
+    {
+        "name": "Consumer Staples",
+        "description": "Consumer Staples includes companies producing essential consumer goods like food, beverages, and household products.",
+        "stocks": [
+            "PG",
+            "WMT",
+            "KO",
+            "PEP",
+            "CL",
+            "COST"
+        ],
+        "performance": {
+            "ytd": 8.2,
+            "oneYear": 12.5,
+            "threeYear": 9.8
+        }
+    },
+    {
+        "name": "Consumer Cyclical",
+        "description": "Consumer Cyclical sector includes retailers, restaurants, and discretionary consumer goods companies.",
+        "stocks": [
+            "AMZN",
+            "NKE",
+            "MCD",
+            "SBUX",
+            "TGT"
+        ],
+        "performance": {
+            "ytd": 18.6,
+            "oneYear": 24.3,
+            "threeYear": 28.2
+        }
+    },
+    {
+        "name": "Industrial",
+        "description": "Industrial sector comprises manufacturing, aerospace, defense, and machinery companies.",
+        "stocks": [
+            "BA",
+            "GE",
+            "CAT",
+            "HON"
+        ],
+        "performance": {
+            "ytd": 12.8,
+            "oneYear": 19.5,
+            "threeYear": 16.3
+        }
+    },
+    {
+        "name": "Energy",
+        "description": "Energy sector includes oil and gas companies, as well as energy production and exploration firms.",
+        "stocks": [
+            "XOM",
+            "CVX"
+        ],
+        "performance": {
+            "ytd": -5.2,
+            "oneYear": 8.4,
+            "threeYear": 12.6
+        }
+    },
+    {
+        "name": "Utilities",
+        "description": "Utilities sector includes electric, gas, and water distribution companies providing essential services.",
+        "stocks": [
+            "DUK",
+            "SO",
+            "NEE"
+        ],
+        "performance": {
+            "ytd": 3.1,
+            "oneYear": 5.8,
+            "threeYear": 6.2
+        }
+    },
+    {
+        "name": "Communication",
+        "description": "Communication sector includes telecommunications, media, and entertainment companies.",
+        "stocks": [
+            "DIS",
+            "TWX",
+            "CMCSA",
+            "CHTR",
+            "T",
+            "VZ"
+        ],
+        "performance": {
+            "ytd": 9.3,
+            "oneYear": 14.2,
+            "threeYear": 11.5
+        }
+    }
+]

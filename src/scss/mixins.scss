@@ -1,0 +1,55 @@
+@use 'variables' as *;
+
+//!MIXINS
+//TEXT MIXIN (SCSS)
+@mixin text($pcSize, $mobileSize, $weight, $textAlignment){
+    font-size: $mobileSize;
+    font-weight: $weight;
+    @media (min-width: $laptop) {
+        font-size: $pcSize;
+        text-align: $textAlignment;
+    }
+}
+@mixin drop-shadow($x, $y, $blur, $color){
+    box-shadow: $x $y $blur $color;
+}
+
+//ADAPTIVE FONT MIXIN (PIXELS ONLY!!!)
+$minWidth: 320px; //The smallest screen possible
+$maxWidth: 1440; //The template's witdth
+
+@mixin adaptive-font($pcSize, $mobileSize, $property, $unit){
+    $pcMobileDiffenrece: $pcSize - $mobileSize;
+    $addMobSize:$pcMobileDiffenrece + $pcMobileDiffenrece * 0.7;
+        @media (max-width: $tablet) {
+            #{$property}: calc(#{$mobileSize + #{$unit}} + #{$addMobSize} * ((100vw - #{$minWidth}) / #{$maxWidth}));
+        }
+    @media (min-width: $tablet) {
+        #{$property}: calc(#{$mobileSize + #{$unit}} + #{$pcMobileDiffenrece} * (100vw / #{$maxWidth}));
+    }
+}
+
+@mixin scaleDown($scaleStart, $scaleEnd, $scaleDuration: 0.4s){
+    @keyframes scale-down{
+        0%{
+            transform: scale($scaleStart);
+        }
+        100%{
+            transform: scale($scaleEnd);
+        }
+    }
+    animation: scale-down $scaleDuration;
+    animation-fill-mode: both;
+}
+@mixin scaleUp($scaleStart, $scaleEnd, $scaleDuration: 0.4s){
+        @keyframes scale-up{
+        0%{
+            transform: scale($scaleEnd);
+        }
+        100%{
+            transform: scale($scaleStart);
+        }
+    }
+    animation: scale-up $scaleDuration;
+    animation-fill-mode: both;
+}

@@ -1,0 +1,46 @@
+@use '../variables' as *;
+.compare{
+    &__title{
+        margin-block-end: 0.7em;
+    }
+    &__body{
+        @media (max-width: $tablet) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 1rem;
+        }
+        margin-block-end: 3rem;
+    }
+    .screen-split{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        gap: 2rem;
+        @media (max-width: $tablet) {
+            display: flex;
+            flex-direction: column;
+        }
+        .stock-details{
+            overflow: auto;
+            border: 1px solid $gray-600;
+            border-radius: 0.625rem;
+            padding: 1.25rem;
+            &--add-page{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                & > *:not(a){
+                    flex-basis: 100%;
+                    flex-grow: 1;
+                }
+            }
+        }
+    }
+    .multi-chart{
+        h2{
+            margin-block-end: 1em;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+//!WHEN UPDATING RESET.SCSS,
+//!SAVE RESET.SCSS FIRST
+//!THEN SAVE THIS FILE!
+@use 'variables' as *;
+
+/* FONTS */
+@import url("https://fonts.googleapis.com/css?family=Space+Grotesk:regular,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:300,regular,500&display=swap");
+
+* { padding: 0; margin: 0; border: 0; }
+*,*::before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+nav,footer,header,aside{display: block;}
+html,body{
+    height: 100%;
+    min-width: $mobileS;
+    font-size: 100%;
+    line-height: 1;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body{
+    font-family: $space-grotesk;
+    font-size: $mh4;
+    font-weight: $light;
+    @media (min-width: $tablet) {
+        font-size: $h4;
+    }
+}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;} a{color: inherit;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}

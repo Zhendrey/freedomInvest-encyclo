@@ -1,0 +1,28 @@
+@use '../variables.scss' as *;
+
+.logout{
+    @media (max-width: $mobileL) {
+        text-align: center;
+        &__buttons{
+            justify-content: center;
+        }
+    }
+    &__heading{
+        margin-block-end: 2rem;
+        & h1{
+            margin-block-end: 1em;
+        }
+    }
+    &__buttons{
+        display: flex;
+        gap: 1.5rem;
+    }
+    &__accept{
+        color: $white;
+        background-color: $green;
+    }
+    &__reject{
+        color: $white;
+        background-color: $red;
+    }
+}

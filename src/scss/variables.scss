@@ -1,0 +1,72 @@
+//!VARIABLES
+
+//Device widths
+$tv: 160em;
+$laptopL: 90em;
+$laptop: 64rem;
+$tablet: 48em;
+$mobileL: 26.5625em;
+$mobileM: 23.4375em;
+$mobileS: 20em;
+
+//COLOR
+$lime: #B9FF66;
+$green: #0BA13B;
+$red: #F51818;
+$blue: #0B6BA1;
+$grey: #F3F3F3;
+$darkBlue: #191A23;
+$gray-400: hsl(0, 0%,63%);
+$gray-600: hsl(0, 0%, 27%);
+$black: hsl(0, 0%, 0%);
+$white: hsl(0, 0%, 100%);
+
+//Font-families
+$space-grotesk: 'Space Grotesk';
+$inter: 'Inter';
+
+//Font-sizes (laptop)
+
+//!LANDING
+$h1: 3.75rem;
+$h2: 2.5rem;
+$h3: 1.875rem;
+$h4: 1.25rem;
+$p: 1.125rem;
+
+//Font-sizes (mobile)
+$mh1: 2.6875rem;
+$mh2: 2.25rem;
+$mh3: 1.625rem;
+$mh4: 1.125rem;
+$mp: 1rem;
+
+//Font-weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+//Transitions
+$defTransition: all 0.4s ease 0s;
+$burgerTransition: all 0.4s ease 0s;
+
+
+//FONT-STYLES (max-width: $laptop):
+$heroTitle: 1.75rem;
+$heroAction: 7.5px;
+
+//Widths
+$container: 77.9375rem;
+
+//Gaps
+$sectionGap: 5rem;
+
+//Borders
+$sectionBorderRadius: 45px;
+$fieldRadius: 14px;
+$buttonRadius: 10px;
+$cardRadius: 5px;
+
+$minWidth: 320px; //The smallest screen possible
+$maxWidth: 1440; //The template's witdth

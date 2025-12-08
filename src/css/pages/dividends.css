@@ -1,0 +1,27 @@
+.dividends {
+  overflow: auto;
+}
+@media (max-width: 26.5625em) {
+  .dividends table {
+    width: 100%;
+  }
+  .dividends tbody {
+    display: flex;
+  }
+  .dividends tbody tr {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}
+.dividends tbody th,
+.dividends tbody td {
+  border: 1px solid hsl(0, 0%, 0%);
+}
+.dividends tbody th,
+.dividends tbody td {
+  text-align: center;
+  padding: 0.5em;
+}
+
+/*# sourceMappingURL=dividends.css.map */

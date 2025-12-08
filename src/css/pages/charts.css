@@ -1,0 +1,29 @@
+.charts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.stock-details .chart h3 {
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+@media (min-width: 64rem) {
+  .stock-details .chart h3 {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+}
+
+.compare .chart h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+@media (min-width: 64rem) {
+  .compare .chart h3 {
+    font-size: 1.25rem;
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=charts.css.map */

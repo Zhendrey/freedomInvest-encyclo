@@ -1,0 +1,45 @@
+@use '../variables.scss' as *;
+
+.login{
+    margin-block-end: 5rem;
+    h1{
+        text-align: center;
+        margin-block-end: 0.7em;
+        @media (min-width: 32.5em) {
+            text-align: left;
+        }
+    }
+    .form{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        @media (520px < width < #{$tablet}) {
+            justify-content: center;
+        }
+        @media (max-width: 32.5em) {
+            flex-direction: column;
+            align-items: center;
+        }
+        gap: 1rem;
+        &__input{
+            display: inline-flex;
+            flex-direction: column;
+            gap: 2px;
+            input{
+                border: 1px solid black;
+                border-radius: 0.625rem;
+                padding: 1em;
+                transition: all 0.4s ease 0s;
+                &:hover{
+                    background-color: #bcb6b6;
+                    box-shadow: 0 0 3px 3px #bcb6b6;
+                    color: white;
+                    border-color: white;
+                    &::placeholder{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

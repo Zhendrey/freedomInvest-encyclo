@@ -1,0 +1,26 @@
+@use '../variables.scss' as *;
+@use '../mixins.scss' as *;
+
+.charts{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+//chart (in .stock-details)
+.stock-details{
+    .chart{
+        h3{
+            @include text($h2, $mh2, 500, left);
+        }
+    }
+}
+
+//chart (in .compare)
+.compare{
+    .chart{
+        h3{
+            @include text($h4, $mh4, 500, left);
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@media (max-width: 26.5625em) {
+  .logout {
+    text-align: center;
+  }
+  .logout__buttons {
+    justify-content: center;
+  }
+}
+.logout__heading {
+  margin-block-end: 2rem;
+}
+.logout__heading h1 {
+  margin-block-end: 1em;
+}
+.logout__buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+.logout__accept {
+  color: hsl(0, 0%, 100%);
+  background-color: #0BA13B;
+}
+.logout__reject {
+  color: hsl(0, 0%, 100%);
+  background-color: #F51818;
+}
+
+/*# sourceMappingURL=Logout.css.map */

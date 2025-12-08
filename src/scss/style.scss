@@ -1,0 +1,20 @@
+//!WHEN UPDATING RESET.SCSS,
+//!SAVE RESET.SCSS FIRST
+//!THEN SAVE THIS FILE!
+//!sass --watch scss:css (if use dart scss at the src folder)
+
+//!GENERAL STYLES
+@use 'reset';
+@use 'icons';
+@use 'components';
+@use 'variables';
+
+//!PAGES
+@use 'home';
+@use 'pages/stocks';
+@use 'pages/compare.scss';
+@use 'pages/dividends.scss';
+@use 'pages/charts.scss';
+@use 'pages/login.scss';
+@use 'pages/logout.scss';
+//====================================================//
