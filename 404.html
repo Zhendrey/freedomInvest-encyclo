@@ -1,20 +1,14 @@
-<!DOCTYPE html> 
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <title>Redirecting…</title>
     <script>
-      const redirect = () => {
-        // Strip the repo name from the path
-        const current = window.location.pathname.replace("/freedomInvest-encyclo", "");
-
-        // Save the path we WANT to land on
-        sessionStorage.setItem("redirect", current);
-
-        // Send user to the actual entry point
+      (function () {
+        const path = window.location.pathname.replace("/freedomInvest-encyclo", "");
+        sessionStorage.setItem("redirect", path);
         window.location.replace("/freedomInvest-encyclo/");
-        console.log(window.location.pathname);
-      };
-      redirect();
+      })();
     </script>
   </head>
   <body></body>
